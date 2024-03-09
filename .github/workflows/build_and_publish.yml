@@ -1,5 +1,5 @@
 name: Build and Publish
-on: [push]
+on: [workflow_dispatch, push]
 concurrency:
   group: ${{ github.workflow}}-${{ github.ref }}
   cancel-in-progress: true
